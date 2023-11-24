@@ -1,0 +1,23 @@
+.footer-div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 2em;
+    background-color: rgba(251, 238, 224, 0.2);
+}
+
+@media screen and (max-width: 800px) {
+    .footer-div {
+        position: relative;
+
+        margin-top: 20em;
+
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .footer-div {
+        position: relative;
+
+    }
+}

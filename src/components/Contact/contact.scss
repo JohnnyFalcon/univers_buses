@@ -1,0 +1,154 @@
+$main: #fbeee0;
+$main-dark: #422800;
+
+
+.contact-section {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: inherit;
+    flex-direction: column;
+    max-width: 60em;
+    margin: 0 auto;
+
+    h2 {
+
+        font-weight: 800;
+        font-size: 2rem;
+        margin-bottom: 0.5em;
+        color: $main-dark;
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+
+    .info-links {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .link-div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1em;
+        }
+
+        .info-link {
+            font-weight: 600;
+            margin-top: 1em;
+
+        }
+
+        .info-link:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+
+
+
+
+        .input-div {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        textarea {
+
+            padding: 1em;
+            width: 97%;
+        }
+
+        .textarea-label {
+            width: 100%;
+        }
+
+        input,
+        textarea {
+            border: solid 1px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+
+        input {
+            padding: 1em;
+            font-size: 1em;
+        }
+
+        label {
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-top: 2em;
+
+
+        }
+
+        button {
+            width: 50%;
+            margin: 0 auto;
+            font-family: 'Jost', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background-color: black;
+            padding: 1em;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+
+        }
+
+        .checkbox-div {
+            margin: 2em auto;
+
+            label {
+                font-weight: 400;
+                font-size: 1rem;
+                text-transform: none;
+            }
+
+            input {
+                margin-right: 1em;
+
+            }
+        }
+
+    }
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+    .contact-section {
+        .inputs {
+
+            justify-content: center;
+
+            .textarea-label {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .info-links {
+            justify-content: space-around;
+        }
+    }
+}

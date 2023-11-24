@@ -1,0 +1,67 @@
+:root {
+  font-family: 'Jost', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section#contact {
+  scroll-margin-top: 0;
+}
+
+section#about {
+  scroll-margin-top: 5em;
+}
+
+section#fleet {
+  scroll-margin-top: 9em;
+}
+
+@media (max-width: 800px) {
+  section#contact {
+    scroll-margin-top: 3em;
+  }
+
+  section#about {
+    scroll-margin-top: 5em;
+  }
+
+  section#fleet {
+    scroll-margin-top: 7em;
+  }
+
+}
+
+body {
+
+  background-color: rgba(250, 250, 250, 1);
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+pre {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
