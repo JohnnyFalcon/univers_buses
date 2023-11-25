@@ -34,6 +34,8 @@ section#fleet {
 }
 
 @media (max-width: 800px) {
+  body {}
+
   section#contact {
     scroll-margin-top: 3em;
   }
@@ -47,6 +49,8 @@ section#fleet {
   }
 
 }
+
+
 
 body {
 

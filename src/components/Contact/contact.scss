@@ -136,7 +136,15 @@ $main-dark: #422800;
 
 @media screen and (max-width: 800px) {
     .contact-section {
+        h2 {
+            text-align: center;
+        }
+
         .inputs {
+
+            textarea {
+                width: 90%;
+            }
 
             justify-content: center;
 
