@@ -41,7 +41,7 @@ const Navbar = () => {
                 <li>
                   <Link
                     className="nav-link"
-                    to="/#fleet"
+                    to="/#about"
                     onClick={() => scroll("about")}
                   >
                     O nas

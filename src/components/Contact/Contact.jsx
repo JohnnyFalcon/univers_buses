@@ -18,14 +18,18 @@ const Contact = ({ defaultMessage }) => {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
+    const nameInput = document.getElementById("user_name");
+    const emailInput = document.getElementById("user_email");
+    const phoneInput = document.getElementById("phone_number");
+    const messageInput = document.getElementById("message");
+    const checkboxInput = document.getElementById("checkbox");
     try {
       setLoading(true);
 
       console.log(nameRef.current.value);
       const result = await emailjs.send(
-        "service_jribqwg",
-        "template_uhdrrwc",
+        import.meta.env.VITE_EMAILJS_SERVICE_KEY,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_KEY,
         {
           user_name: nameRef.current.value,
           user_email: emailRef.current.value,
@@ -34,13 +38,18 @@ const Contact = ({ defaultMessage }) => {
             : "(nie podano)",
           message: messageRef.current.value
         },
-        "CajM5ZAwpl5TYN5Mc"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       console.log(result.text);
     } catch (error) {
       console.log(error.text);
     } finally {
       setLoading(false);
+      nameInput.value = "";
+      emailInput.value = "";
+      phoneInput.value = "";
+      messageInput.value = "";
+      checkboxInput.checked = false;
     }
   };
 
@@ -131,7 +140,7 @@ const Contact = ({ defaultMessage }) => {
         </div>
 
         <button type="submit" value="Send">
-          wyślij
+          {loading ? "Wysyłanie ..." : "wyślij"}
         </button>
       </form>
     </div>
