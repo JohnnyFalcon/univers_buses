@@ -71,14 +71,14 @@ $main-dark: #422800;
 
     @media screen and (max-width: 800px) {
         .header-content {
-            position: static;
+            position: relative;
             display: flex;
-            justify-content: center;
             align-items: center;
             text-align: center;
             flex-direction: column;
             left: unset !important;
             transform: scale(0.8);
+            top: 15% !important;
         }
     }
 
@@ -141,7 +141,7 @@ $main-dark: #422800;
 
 
     .wrapper {
-
+        overflow-x: hidden;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
             rgba(0, 0, 0, 0.23) 0px 6px 6px;
         padding: 2em;
@@ -174,6 +174,8 @@ $main-dark: #422800;
         }
 
         .about-text {
+
+
             .title {
                 font-weight: 800;
                 font-size: 2rem;
@@ -273,8 +275,14 @@ $main-dark: #422800;
 
 
         @media screen and (max-width: 800px) {
+            .title {
+
+                margin-bottom: 0;
+            }
+
             .bus {
                 transform: scale(0.8);
+                margin: 0 !important;
             }
         }
 

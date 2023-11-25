@@ -92,7 +92,9 @@ const Navbar = () => {
         )}
 
         <SwipeableDrawer
-          sx={{ ".MuiDrawer-paper": { p: "5%" } }}
+          sx={{
+            ".MuiDrawer-paper": { p: "5%" }
+          }}
           className="drawer"
           anchor="right"
           open={showDrawer}

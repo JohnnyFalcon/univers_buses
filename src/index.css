@@ -15,6 +15,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 html {
@@ -34,7 +35,7 @@ section#fleet {
 }
 
 @media (max-width: 800px) {
-  body {}
+
 
   section#contact {
     scroll-margin-top: 3em;

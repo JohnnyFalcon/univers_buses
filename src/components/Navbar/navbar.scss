@@ -13,9 +13,9 @@ nav {
         0px 16px 32px rgba(0, 0, 0, 0.15);
     background-color: rgba(255, 255, 255, 0.9);
 
-
     display: flex;
     justify-content: space-between;
+
 
     .nav-content {
         width: inherit;
@@ -114,6 +114,7 @@ nav {
     .nav-content {
         padding: 0 3em !important;
 
+
     }
 
     .links {
@@ -132,6 +133,18 @@ nav {
         position: static;
         justify-content: space-between;
 
+
+    }
+}
+
+@media (max-width: 800px) {
+
+    .nav-content {
+
+        img {
+            transform: scale(0.7) !important;
+
+        }
 
     }
 }

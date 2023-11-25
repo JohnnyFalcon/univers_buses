@@ -12,6 +12,15 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import mainImg from "../../assets/bus-img.jpg";
 import placeholderImg from "../../assets/placeholder-bus-img.jpg";
 import styled from "styled-components";
+
+const LazyPicture = styled(LazyLoadImage)`
+  object-fit: cover;
+  width: 100vw;
+  height: 85vh;
+  @media screen and (max-width: 500px) {
+    object-position: 60% 0;
+  }
+`;
 const Home = () => {
   const { hash, pathname } = useLocation();
   const scroll = (id) => {
@@ -25,12 +34,6 @@ const Home = () => {
     scroll(idName);
   }, [hash]);
 
-  const LazyPicture = styled(LazyLoadImage)`
-    object-fit: cover;
-    width: 100vw;
-    height: 85vh;
-  `;
-
   return (
     <main id="main-content">
       <header id="home">
@@ -39,7 +42,7 @@ const Home = () => {
             src={mainImg}
             effect="blur"
             width={"100%"}
-            PlaceholderSrc={placeholderImg}
+            placeholderSrc={placeholderImg}
             height={"100%"}
             alt="bus"
           />
@@ -52,6 +55,7 @@ const Home = () => {
             to="/#fleet"
             onClick={() => {
               scroll("fleet");
+              window.scrollTo(0, 0);
             }}
           >
             <button>Zobacz nasze busy</button>
@@ -133,7 +137,12 @@ const Home = () => {
           <h2 className="title">Nasza Flota</h2>
           <div className="buses">
             {buses.map((bus) => (
-              <Link to={bus.link} key={bus.info.id} state={bus.link}>
+              <Link
+                to={bus.link}
+                key={bus.info.id}
+                state={bus.link}
+                onClick={() => window.scrollTo(0, 0)}
+              >
                 <div
                   className="bus"
                   style={{ backgroundImage: `url(${bus.info.imgMain})` }}
