@@ -157,6 +157,22 @@ $main-dark: #422800;
 
         .info-links {
             justify-content: space-around;
+
+            .link-div {
+                margin-bottom: 2em;
+            }
+
+
+        }
+
+        .checkbox-div {
+            input {
+                margin-left: 1em;
+            }
+
+            label {
+                font-size: 0.8rem !important;
+            }
         }
     }
 }

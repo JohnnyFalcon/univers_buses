@@ -74,8 +74,8 @@ const Home = () => {
           <p className="title">Komfort</p>
           <p>
             Luksusowe podróże zawsze zaczynają się od wygodnego transportu.
-            Oferujemy doskonale utrzymane busy, zapewniające nie tylko komfort,
-            ale także bezpieczeństwo. Wynajmij u nas i uczynij swoją podróż
+            Oferujemy doskonale utrzymane busy zapewniające nie tylko komfort,
+            ale także bezpieczeństwo. Wynajmij u nas i uczyń swoją podróż
             niezapomnianą.
           </p>
         </div>
@@ -87,8 +87,8 @@ const Home = () => {
           <p>
             Zaplanuj swoją podróż z nami i ciesz się pełną swobodą. Nasza flota
             nowoczesnych busów jest dostępna, aby spełnić Twoje potrzeby.
-            Niezależnie od tego, czy to wycieczka z przyjaciółmi czy rodzinna
-            podróż, mamy odpowiedni pojazd dla Ciebie.
+            Niezależnie od tego, czy to wycieczka z przyjaciółmi, czy rodzinna
+            podróż - mamy odpowiedni pojazd dla Ciebie.
           </p>
         </div>
         <div>
@@ -112,9 +112,9 @@ const Home = () => {
           <div className="about-text">
             <h2 className="title">O nas</h2>
             <p>
-              Jesteśmy firmą specjalizującą się w wynajmie busów, znajdującą się
+              Jesteśmy firmą specjalizującą się w wynajmie busów znajdującą się
               w Lubaczowie woj. Podkarpackim. Oferujemy kompleksowy wynajem w
-              niewygórowanej cenie, dostosowane do różnorodnych potrzeb. Nasza
+              niewygórowanej cenie dostosowane do różnorodnych potrzeb. Nasza
               oferta skierowana jest do biur podróży, jednostek samorządu
               terytorialnego, instytucji oświatowych i kulturalnych, a także
               klientów indywidualnych, poszukujących solidnego partnera w

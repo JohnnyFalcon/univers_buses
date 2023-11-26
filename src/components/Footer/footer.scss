@@ -27,3 +27,15 @@ footer {
         text-decoration: underline;
     }
 }
+
+@media (max-width: 800px) {
+
+    footer {
+
+        a,
+        p {
+            font-size: 0.7rem;
+
+        }
+    }
+}
