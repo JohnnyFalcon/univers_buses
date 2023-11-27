@@ -14,7 +14,7 @@ const Contact = ({ defaultMessage }) => {
   const phoneRef = useRef();
   const messageRef = useRef();
 
-  const [loading, setLoading] = useState(false);
+  const [buttonText, setButtonText] = useState("Wyślij");
 
   const sendEmail = async (e) => {
     e.preventDefault();
@@ -23,10 +23,10 @@ const Contact = ({ defaultMessage }) => {
     const phoneInput = document.getElementById("phone_number");
     const messageInput = document.getElementById("message");
     const checkboxInput = document.getElementById("checkbox");
-    try {
-      setLoading(true);
+    const btn = document.querySelector(".submit-button");
 
-      console.log(nameRef.current.value);
+    try {
+      setButtonText("Wysyłanie ...");
       const result = await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_KEY,
         import.meta.env.VITE_EMAILJS_TEMPLATE_KEY,
@@ -41,15 +41,25 @@ const Contact = ({ defaultMessage }) => {
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
       console.log(result.text);
+      btn.style.backgroundColor = "#117d11";
+      setButtonText("Wysłano pomyślnie !");
+      setTimeout(() => {
+        btn.style.backgroundColor = "black";
+        setButtonText("Wyślij");
+        nameInput.value = "";
+        emailInput.value = "";
+        phoneInput.value = "";
+        messageInput.value = "";
+        checkboxInput.checked = false;
+      }, 4000);
     } catch (error) {
       console.log(error.text);
-    } finally {
-      setLoading(false);
-      nameInput.value = "";
-      emailInput.value = "";
-      phoneInput.value = "";
-      messageInput.value = "";
-      checkboxInput.checked = false;
+      btn.style.backgroundColor = "red";
+      setButtonText("Coś poszło nie tak");
+      setTimeout(() => {
+        btn.style.backgroundColor = "black";
+        setButtonText("Wyślij");
+      }, 4000);
     }
   };
 
@@ -125,6 +135,7 @@ const Contact = ({ defaultMessage }) => {
             name="message"
             cols="40"
             rows="10"
+            required
             aria-required="true"
             aria-invalid="false"
             defaultValue={defaultMessage ? defaultMessage : ""}
@@ -139,8 +150,8 @@ const Contact = ({ defaultMessage }) => {
           </label>
         </div>
 
-        <button type="submit" value="Send">
-          {loading ? "Wysyłanie ..." : "wyślij"}
+        <button type="submit" value="Send" className="submit-button">
+          {buttonText}
         </button>
       </form>
     </div>
