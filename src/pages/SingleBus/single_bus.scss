@@ -28,11 +28,11 @@ $main-dark: #422800;
     }
 
     button {
-        background-color: $main;
-        border: 2px solid $main-dark;
+        background-color: #c1e0ed;
+        border: 2px solid #233e4c;
         border-radius: 30px;
-        box-shadow: #422800 4px 4px 0 0;
-        color: #422800;
+        box-shadow: #233e4c 4px 4px 0 0;
+        color: #233e4c;
         cursor: pointer;
         font-weight: 600;
         font-size: 18px;
@@ -52,18 +52,19 @@ $main-dark: #422800;
 
     }
 
+
     button:hover {
-        background-color: #fff;
+        background-color: #ceeffe;
     }
 
     button:active {
-        box-shadow: #422800 2px 2px 0 0;
+        box-shadow: #233e4c 2px 2px 0 0;
         transform: translate(-48%, 2px);
     }
 
     .desc {
         max-width: 40em;
-        background-color: rgba(251, 238, 224, 0.8);
+        background-color: #c1e0ed;
         border-radius: 1em;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         padding: 2em 3em;
@@ -90,7 +91,7 @@ $main-dark: #422800;
     }
 
     .swiper-pagination-progressbar-fill {
-        background-color: $main-dark !important;
+        background-color: #233e4c !important;
     }
 
     .swiper {

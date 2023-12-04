@@ -1,45 +1,50 @@
 $main: #fbeee0;
-$main-dark: #422800;
+$main-dark: #233e4c;
 
 
 #main-content {
 
     header {
 
-        height: 85vh;
+        height: 90vh;
         display: flex;
         justify-content: center;
-        position: relative;
-        margin-top: 5em;
+
+
         overflow: hidden;
+
 
         .header-content {
             position: absolute;
-            left: 9%;
-            top: 27%;
+            left: 15%;
+            top: 30%;
 
             h1 {
 
                 font-weight: 900;
                 font-size: 3rem;
-                color: white;
+                color: black;
+                text-shadow: white 1px 0 10px;
                 animation: 2s anim-lineUp ease-out;
                 text-align: center;
             }
 
+
             p {
-                color: white;
+
                 font-size: 1.5rem;
                 animation: 2s anim-lineUp ease-out;
+                font-weight: 500;
+                text-shadow: white 0 0 10px;
 
             }
 
             button {
-                background-color: $main;
-                border: 2px solid $main-dark;
+                background-color: #c1e0ed;
+                border: 2px solid #233e4c;
                 border-radius: 30px;
-                box-shadow: #422800 4px 4px 0 0;
-                color: #422800;
+                box-shadow: #233e4c 4px 4px 0 0;
+                color: #233e4c;
                 cursor: pointer;
                 font-weight: 600;
                 font-size: 18px;
@@ -57,11 +62,11 @@ $main-dark: #422800;
             }
 
             button:hover {
-                background-color: #fff;
+                background-color: #ceeffe;
             }
 
             button:active {
-                box-shadow: #422800 2px 2px 0 0;
+                box-shadow: #233e4c 2px 2px 0 0;
                 transform: translate(2px, 2px);
             }
 
@@ -87,13 +92,13 @@ $main-dark: #422800;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        top: -7em;
+        top: -4em;
         padding: 0 7em;
         align-items: stretch;
 
         div {
-            background-color: $main;
-            border: 3px solid $main-dark;
+            background-color: #c1e0ed;
+            border: 3px solid #233e4c;
             border-radius: 1em;
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
@@ -108,6 +113,7 @@ $main-dark: #422800;
                 font-size: 1.4rem;
                 margin-bottom: 1em;
                 font-style: normal;
+
             }
 
             img {
@@ -124,6 +130,7 @@ $main-dark: #422800;
             p {
                 font-style: italic;
                 font-size: 1.1rem;
+
             }
         }
 
@@ -131,6 +138,8 @@ $main-dark: #422800;
 
     @media screen and (max-width: 800px) {
         .key-points {
+
+
             padding: 0 1em;
 
             div {
@@ -148,8 +157,8 @@ $main-dark: #422800;
         margin: 0 auto;
         max-width: 95em;
         border-radius: 1em;
-        background-color: rgba(251, 238, 224, 0.2);
-        margin-top: -3em;
+        background-color: rgba(192, 223, 237, 0.1);
+        margin-top: -1em;
         margin-bottom: 2em;
     }
 
@@ -205,8 +214,10 @@ $main-dark: #422800;
 
     .fleet-section {
         text-align: center;
-
+        margin: 0 -2em;
         margin-top: 4em;
+        background-color: rgba(192, 223, 237, 0.4);
+        padding: 2em 1em;
 
         .title {
             font-weight: 800;
@@ -223,7 +234,7 @@ $main-dark: #422800;
             justify-content: space-around;
 
             .rez {
-                color: $main-dark;
+                color: #233e4c;
                 font-weight: 600;
             }
 
@@ -235,8 +246,8 @@ $main-dark: #422800;
 
                 background-size: 140%;
                 background-position: center 80%;
-                border: 1px solid $main-dark;
-                border-radius: 1em;
+
+                border-radius: 2em;
                 transition: transform 0.2s ease-in-out;
                 cursor: pointer;
             }
@@ -288,6 +299,9 @@ $main-dark: #422800;
 
     }
 
+    #contact {
+        margin-bottom: 2em;
+    }
 
 
 

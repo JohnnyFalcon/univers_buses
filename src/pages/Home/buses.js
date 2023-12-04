@@ -17,7 +17,7 @@ export const buses = [
       id: "0",
       name: "Autobus Setra S 415 GT-HD",
       description:
-        "Zapraszamy do wynajęcia luksusowego autobusu Setra S 415 GT-HD - kwintesencji komfortu i elegancji w podróżach dalekobieżnych. Znajdź luksus w każdym detalu tego doskonale zaprojektowanego pojazdu, gdzie podróż staje się wyjątkowym przeżyciem. \n\n Setra S 415 GT-HD oferuje nie tylko przestronne wnętrze, ale także zaawansowane udogodnienia, takie jak klimatyzacja, systemy multimedialne i ergonomiczne siedzenia, które gwarantują pełen relaks podczas podróży. \n\nNiech Twoja podróż stanie się niezapomnianym doświadczeniem dzięki Setra S 415 GT-HD. Skorzystaj z naszych usług, aby zorganizować wyjątkową trasę, gdzie luksus i wygoda są priorytetem. Zaufaj Setra - Twojemu komfortowi niech towarzyszy elegancja w każdym kilometrze.",
+        "Zapraszamy do wynajęcia luksusowego autobusu Setra S 415 GT-HD - kwintesencji komfortu i elegancji w podróżach dalekobieżnych. Znajdź luksus w każdym detalu tego doskonale zaprojektowanego pojazdu, gdzie podróż staje się wyjątkowym przeżyciem. \n\nSetra S 415 GT-HD oferuje nie tylko przestronne wnętrze, ale także zaawansowane udogodnienia, takie jak klimatyzacja, systemy multimedialne i ergonomiczne siedzenia, które gwarantują pełen relaks podczas podróży. \n\nNiech Twoja podróż stanie się niezapomnianym doświadczeniem dzięki Setra S 415 GT-HD. Skorzystaj z naszych usług, aby zorganizować wyjątkową trasę, gdzie luksus i wygoda są priorytetem. Zaufaj Setra - Twojemu komfortowi niech towarzyszy elegancja w każdym kilometrze.\n\nOferta z kierowcą.",
       spec: [
         "Liczba miejsca 49+ 2+1",
         " Klimatyzacja",
@@ -38,7 +38,7 @@ export const buses = [
       id: "1",
       name: "Bus MERCEDES SPRINTER 519",
       description:
-        "Odkryj wygodę podróżowania naszym praktycznym autobusem Mercedes Sprinter 519. Z solidnością i funkcjonalnością, ten pojazd oferuje przyjemne doświadczenia podróżowania. Wygodne fotele,przestronne wnętrze i bezpieczne systemy sprawiają, że podróżowanie staje się komfortowe. Dzięki różnorodnym opcjom konfiguracji, możesz dostosować autobus do swoich potrzeb. Zarezerwuj już dziś i doświadcz podróży na solidnym poziomie. Solidność, bezpieczeństwo i praktyczność - wszystko w jednym pojeździe.",
+        "Odkryj wygodę podróżowania naszym praktycznym autobusem Mercedes Sprinter 519. Z solidnością i funkcjonalnością, ten pojazd oferuje przyjemne doświadczenia podróżowania. Wygodne fotele,przestronne wnętrze i bezpieczne systemy sprawiają, że podróżowanie staje się komfortowe. Dzięki różnorodnym opcjom konfiguracji, możesz dostosować autobus do swoich potrzeb. Zarezerwuj już dziś i doświadcz podróży na solidnym poziomie. Solidność, bezpieczeństwo i praktyczność - wszystko w jednym pojeździe.\n\nOferta z kierowcą.",
       spec: [
         "Liczba miejsca 20+1",
         " Klimatyzacja",

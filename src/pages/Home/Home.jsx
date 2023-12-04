@@ -9,14 +9,14 @@ import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import mainImg from "../../assets/bus-img.jpg";
-import placeholderImg from "../../assets/placeholder-bus-img.jpg";
+import mainImg from "../../assets/bus-img.png";
+import placeholderImg from "../../assets/placeholder-bus-img.png";
 import styled from "styled-components";
 
 const LazyPicture = styled(LazyLoadImage)`
   object-fit: cover;
   width: 100vw;
-  height: 85vh;
+  height: 90vh;
   @media screen and (max-width: 500px) {
     object-position: 60% 0;
   }
@@ -50,12 +50,14 @@ const Home = () => {
 
         <div className="header-content">
           <h1>Wypożyczalnia busów - Lubaczów</h1>
-          <p>Sprawdż naszą ofertę i zarezerwuj teraz!</p>
+          <span className="p-span">
+            <p>Sprawdż naszą ofertę i zarezerwuj teraz!</p>
+          </span>
+
           <Link
             to="/#fleet"
             onClick={() => {
               scroll("fleet");
-              window.scrollTo(0, 0);
             }}
           >
             <button>Zobacz nasze busy</button>
@@ -112,24 +114,28 @@ const Home = () => {
           <div className="about-text">
             <h2 className="title">O nas</h2>
             <p>
-              Jesteśmy firmą specjalizującą się w wynajmie busów znajdującą się
-              w Lubaczowie woj. Podkarpackim. Oferujemy kompleksowy wynajem w
-              niewygórowanej cenie dostosowane do różnorodnych potrzeb. Nasza
-              oferta skierowana jest do biur podróży, jednostek samorządu
-              terytorialnego, instytucji oświatowych i kulturalnych, a także
-              klientów indywidualnych, poszukujących solidnego partnera w
-              kwestiach transportu. <br />
-              <br /> Zapraszamy do skorzystania z naszego doświadczenia,
-              gwarantującego rzetelną pomoc na każdym etapie organizacji
-              wyjazdu. Posiadamy nowoczesną flotę busów, utrzymaną w doskonałym
-              stanie, dostarczającą komfortowe warunki podróży zarówno na
-              terenie kraju, jak i całej Europy. <br />
+              Jesteśmy firmą specjalizującą się w kompleksowym wynajmie busów z
+              doświadczeniem, zlokalizowaną w Lubaczowie woj. Podkarpackim.
+              Nasza oferta obejmuje nowoczesną flotę busów utrzymywaną w
+              doskonałym stanie, zapewniającą komfortowe warunki podróży na
+              terenie kraju i całej Europy. Oferujemy wynajem busów z
+              doświadczonymi kierowcami, dostosowany do różnorodnych potrzeb
+              naszych klientów. <br />
               <br /> Stawiamy na profesjonalizm, elastyczne podejście do
-              indywidualnych potrzeb klienta, precyzyjne kalkulacje kosztów oraz
+              indywidualnych wymagań klienta, precyzyjne kalkulacje kosztów oraz
               fachowe doradztwo w zakresie optymalizacji trasy i unikania
-              niepotrzebnych opłat. <br />
+              niepotrzebnych opłat. Nasza oferta skierowana jest zarówno do biur
+              podróży, jednostek samorządu terytorialnego, instytucji
+              oświatowych i kulturalnych, jak i do klientów indywidualnych
+              poszukujących solidnego partnera w kwestiach transportu. <br />
               <br /> Z nami Wasze podróże będą nie tylko bezpieczne, ale również
-              komfortowe i doskonale zorganizowane.
+              komfortowe i doskonale zorganizowane. Oferujemy wynajem busów z
+              doświadczonymi kierowcami, co gwarantuje rzetelną pomoc na każdym
+              etapie organizacji wyjazdu. Dla mniejszych grup istnieje również
+              możliwość wynajęcia pojazdów bez kierowcy, dając naszym klientom
+              pełną elastyczność wyboru opcji dostosowanej do ich potrzeb.
+              Zapraszamy do skorzystania z naszego doświadczenia i kompleksowej
+              oferty, której celem jest zapewnienie satysfakcji z podróży.
             </p>
           </div>
         </section>

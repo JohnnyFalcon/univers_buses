@@ -21,8 +21,18 @@ const Navbar = () => {
   const toggleDrawer = (open) => {
     setShowDrawer(open);
   };
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+      document.querySelector(".nav").style.backgroundColor = "white";
+    } else {
+      document.querySelector(".nav").style.backgroundColor =
+        " rgba(255, 255, 255, 0.7)";
+    }
+  };
+
+  window.addEventListener("scroll", changeNavbarColor);
   return (
-    <nav>
+    <nav className="nav">
       <div className="nav-content">
         <Link to="/" onClick={() => window.scrollTo(0, 0)}>
           <img src={Logo} alt="Logo" />
