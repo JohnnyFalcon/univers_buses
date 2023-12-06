@@ -91,10 +91,16 @@ const Navbar = () => {
             )}
 
             <div className="social-links">
-              <a href="https://www.instagram.com/sokol_j2000/" target="blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=61554121477896"
+                target="blank"
+              >
                 <img src={igIcon} alt="Instagram icon" />
               </a>
-              <a href="https://www.instagram.com/sokol_j2000/" target="blank">
+              <a
+                href="https://www.facebook.com/profile.php?id=61554121477896"
+                target="blank"
+              >
                 <img src={fbIcon} alt="Facebook icon" />
               </a>
             </div>
