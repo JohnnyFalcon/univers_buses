@@ -7,7 +7,7 @@ import merc2 from "../../assets/merc2.jpg";
 import merc3 from "../../assets/merc3.jpg";
 import merc4 from "../../assets/merc4.jpg";
 import reno from "../../assets/reno-front.png";
-import renoBez from "../../assets/reno-front-bez.jpg";
+import renoBez from "../../assets/reno-front-bez.png";
 import reno2 from "../../assets/reno2.jpg";
 import temp from "../../assets/image.webp";
 export const buses = [
