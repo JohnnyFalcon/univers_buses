@@ -4,7 +4,7 @@ import Fleet from "./pages/Fleet/Fleet";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import SingleBus from "./pages/SingleVehicle/SingleBus";
 import SingleCar from "./pages/SingleVehicle/SingleCar";
-import SingleMini from "./pages/SingleVehicle/singleMini";
+import SingleMini from "./pages/SingleVehicle/SingleMini";
 import Footer from "./components/Footer/Footer";
 import "./App.scss";
 import { Routes, Route, useLocation } from "react-router-dom";
