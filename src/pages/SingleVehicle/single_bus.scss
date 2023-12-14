@@ -1,16 +1,16 @@
-$main: #fbeee0;
-$main-dark: #422800;
+$main: #dac2b1;
+$main-dark: #443d37;
 
 .main-single-bus {
     position: relative;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
 
     flex-wrap: wrap;
     padding: 0 1em;
-    padding-top: 10em;
+
 
 
     hr {
@@ -28,11 +28,11 @@ $main-dark: #422800;
     }
 
     button {
-        background-color: #c1e0ed;
-        border: 2px solid #233e4c;
+        background-color: $main;
+        border: 2px solid $main-dark;
         border-radius: 30px;
-        box-shadow: #233e4c 4px 4px 0 0;
-        color: #233e4c;
+        box-shadow: $main-dark 4px 4px 0 0;
+        color: $main-dark;
         cursor: pointer;
         font-weight: 600;
         font-size: 18px;
@@ -54,7 +54,7 @@ $main-dark: #422800;
 
 
     button:hover {
-        background-color: #ceeffe;
+        background-color: #ffe3d0;
     }
 
     button:active {
@@ -64,7 +64,7 @@ $main-dark: #422800;
 
     .desc {
         max-width: 40em;
-        background-color: #c1e0ed;
+        background-color: $main;
         border-radius: 1em;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         padding: 2em 3em;
@@ -123,18 +123,24 @@ $main-dark: #422800;
         margin-top: 3em;
     }
 
+
+
+    .car-div {
+        width: 50em;
+        height: 20em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1em;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+
 }
 
 @media screen and (max-width: 1780px) {
     .main-single-bus {
         padding-top: 4em;
-
-
-
-        hr {
-            display: none;
-        }
-
+        height: 100%;
     }
 
 }

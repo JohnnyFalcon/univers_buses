@@ -1,5 +1,5 @@
-$main: #fbeee0;
-$main-dark: #233e4c;
+$main: #dac2b1;
+$main-dark: #443d37;
 
 
 #main-content {
@@ -17,7 +17,7 @@ $main-dark: #233e4c;
         .header-content {
             position: absolute;
             left: 15%;
-            top: 30%;
+            top: 25%;
 
             h1 {
 
@@ -31,20 +31,20 @@ $main-dark: #233e4c;
 
 
             p {
-
+                color: white;
                 font-size: 1.5rem;
                 animation: 2s anim-lineUp ease-out;
                 font-weight: 500;
-                text-shadow: white 0 0 10px;
+                text-shadow: black 0 0 10px;
 
             }
 
             button {
-                background-color: #c1e0ed;
-                border: 2px solid #233e4c;
+                background-color: $main;
+                border: 2px solid $main-dark;
                 border-radius: 30px;
-                box-shadow: #233e4c 4px 4px 0 0;
-                color: #233e4c;
+                box-shadow: $main-dark 4px 4px 0 0;
+                color: $main-dark;
                 cursor: pointer;
                 font-weight: 600;
                 font-size: 18px;
@@ -62,11 +62,11 @@ $main-dark: #233e4c;
             }
 
             button:hover {
-                background-color: #ceeffe;
+                background-color: #ffe3d0;
             }
 
             button:active {
-                box-shadow: #233e4c 2px 2px 0 0;
+                box-shadow: $main-dark 2px 2px 0 0;
                 transform: translate(2px, 2px);
             }
 
@@ -97,8 +97,8 @@ $main-dark: #233e4c;
         align-items: stretch;
 
         div {
-            background-color: #c1e0ed;
-            border: 3px solid #233e4c;
+            background-color: $main;
+            border: 3px solid $main-dark;
             border-radius: 1em;
             box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
@@ -157,7 +157,7 @@ $main-dark: #233e4c;
         margin: 0 auto;
         max-width: 95em;
         border-radius: 1em;
-        background-color: rgba(192, 223, 237, 0.1);
+        background-color: rgba(218, 194, 177, 0.1);
         margin-top: -1em;
         margin-bottom: 2em;
     }
@@ -216,7 +216,7 @@ $main-dark: #233e4c;
         text-align: center;
         margin: 0 -2em;
         margin-top: 4em;
-        background-color: rgba(192, 223, 237, 0.4);
+        background-color: rgba(218, 194, 177, 0.1);
         padding: 2em 1em;
 
         .title {
@@ -227,14 +227,22 @@ $main-dark: #233e4c;
             margin-bottom: 1em;
         }
 
+        .category {
+
+            font-size: 1.6rem;
+            margin-bottom: 1em;
+            color: $main-dark;
+        }
+
         .buses {
 
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
+            margin-bottom: 3em;
 
             .rez {
-                color: #233e4c;
+                color: $main-dark;
                 font-weight: 600;
             }
 
@@ -286,6 +294,8 @@ $main-dark: #233e4c;
 
 
         @media screen and (max-width: 800px) {
+
+
             .title {
 
                 margin-bottom: 0;
@@ -303,6 +313,17 @@ $main-dark: #233e4c;
         margin-bottom: 2em;
     }
 
+
+
+    @media screen and (max-width: 800px) {
+
+
+        .banner {
+            transform: scale(0.6);
+            display: flex;
+            justify-content: center;
+        }
+    }
 
 
     // End of main content

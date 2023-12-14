@@ -2,7 +2,9 @@ import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Fleet from "./pages/Fleet/Fleet";
 import ContactPage from "./pages/ContactPage/ContactPage";
-import SingleBus from "./pages/SingleBus/SingleBus";
+import SingleBus from "./pages/SingleVehicle/SingleBus";
+import SingleCar from "./pages/SingleVehicle/SingleCar";
+import SingleMini from "./pages/SingleVehicle/singleMini";
 import Footer from "./components/Footer/Footer";
 import "./App.scss";
 import { Routes, Route, useLocation } from "react-router-dom";
@@ -17,8 +19,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="nasza-flota" element={<Fleet />} />
-        <Route path=":bus" element={<SingleBus />} />
-        <Route path=":bus/kontakt" element={<ContactPage />} />
+        <Route path="bus/:bus" element={<SingleBus />} />
+        <Route path="bus/:vehicle/kontakt" element={<ContactPage />} />
+        <Route path="mini/:mini" element={<SingleMini />} />
+        <Route path="mini/:vehicle/kontakt" element={<ContactPage />} />
+        <Route path="car/:car" element={<SingleCar />} />
+        <Route path="car/:vehicle/kontakt" element={<ContactPage />} />
       </Routes>
       {!isHomePage() && (
         <div className="footer-div">

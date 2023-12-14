@@ -4,7 +4,7 @@ import carIcon from "../../assets/car.png";
 import coffeeIcon from "../../assets/coffee-cup.png";
 import convIcon from "../../assets/convenient.png";
 import { Link, useLocation } from "react-router-dom";
-import { buses } from "./buses";
+import { buses, cars, miniBuses } from "./buses";
 import Contact from "../../components/Contact/Contact";
 import Footer from "../../components/Footer/Footer";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -12,13 +12,13 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import mainImg from "../../assets/bus-img.png";
 import placeholderImg from "../../assets/placeholder-bus-img.png";
 import styled from "styled-components";
-
+import banner from "../../assets/banner-pfr.png";
 const LazyPicture = styled(LazyLoadImage)`
   object-fit: cover;
   width: 100vw;
   height: 90vh;
   @media screen and (max-width: 500px) {
-    object-position: 60% 0;
+    object-position: 40% 0;
   }
 `;
 const Home = () => {
@@ -114,13 +114,12 @@ const Home = () => {
           <div className="about-text">
             <h2 className="title">O nas</h2>
             <p>
-              Jesteśmy firmą specjalizującą się w kompleksowym wynajmie busów z
-              doświadczeniem, zlokalizowaną w Lubaczowie woj. Podkarpackim.
-              Nasza oferta obejmuje nowoczesną flotę busów utrzymywaną w
-              doskonałym stanie, zapewniającą komfortowe warunki podróży na
-              terenie kraju i całej Europy. Oferujemy wynajem busów z
-              doświadczonymi kierowcami, dostosowany do różnorodnych potrzeb
-              naszych klientów. <br />
+              Jesteśmy firmą specjalizującą się w kompleksowym wynajmie,
+              zlokalizowaną w Lubaczowie, woj. Podkarpackie. Nasza oferta
+              obejmuje nowoczesną flotę busów utrzymywaną w doskonałym stanie,
+              zapewniającą komfortowe warunki podróży na terenie kraju i całej
+              Europy. Oferujemy wynajem busów, dostosowany do różnorodnych
+              potrzeb naszych klientów. <br />
               <br /> Stawiamy na profesjonalizm, elastyczne podejście do
               indywidualnych wymagań klienta, precyzyjne kalkulacje kosztów oraz
               fachowe doradztwo w zakresie optymalizacji trasy i unikania
@@ -129,22 +128,21 @@ const Home = () => {
               oświatowych i kulturalnych, jak i do klientów indywidualnych
               poszukujących solidnego partnera w kwestiach transportu. <br />
               <br /> Z nami Wasze podróże będą nie tylko bezpieczne, ale również
-              komfortowe i doskonale zorganizowane. Oferujemy wynajem busów z
-              doświadczonymi kierowcami, co gwarantuje rzetelną pomoc na każdym
-              etapie organizacji wyjazdu. Dla mniejszych grup istnieje również
-              możliwość wynajęcia pojazdów bez kierowcy, dając naszym klientom
-              pełną elastyczność wyboru opcji dostosowanej do ich potrzeb.
-              Zapraszamy do skorzystania z naszego doświadczenia i kompleksowej
-              oferty, której celem jest zapewnienie satysfakcji z podróży.
+              komfortowe i doskonale zorganizowane. Dodatkowo, dla
+              zainteresowanych, udostępniamy możliwość wynajęcia autokaru z
+              doświadczonym kierowcą. Zapraszamy do skorzystania z naszego
+              doświadczenia i kompleksowej oferty, której celem jest zapewnienie
+              satysfakcji z podróży.
             </p>
           </div>
         </section>
         <section id="fleet" className="fleet-section">
           <h2 className="title">Nasza Flota</h2>
+          <h3 className="category">Vany</h3>
           <div className="buses">
-            {buses.map((bus) => (
+            {miniBuses.map((bus) => (
               <Link
-                to={bus.link}
+                to={`mini/${bus.link}`}
                 key={bus.info.id}
                 state={bus.link}
                 onClick={() => window.scrollTo(0, 0)}
@@ -160,11 +158,53 @@ const Home = () => {
               </Link>
             ))}
           </div>
+          <h3 className="category">Autokary (z kierowcą)</h3>
+          <div className="buses">
+            {buses.map((bus) => (
+              <Link
+                to={`bus/${bus.link}`}
+                key={bus.info.id}
+                state={bus.link}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <div
+                  className="bus"
+                  style={{ backgroundImage: `url(${bus.info.imgMain})` }}
+                >
+                  <hr className="hrLine" />
+                  <p>{bus.info.name}</p>
+                  <p className="rez">Sprawdź i zarezerwuj -&gt; </p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <h3 className="category">Samochody osobowe</h3>
+          <div className="buses">
+            {cars.map((car) => (
+              <Link
+                to={`car/${car.link}`}
+                key={car.info.id}
+                state={car.link}
+                onClick={() => window.scrollTo(0, 0)}
+              >
+                <div
+                  className="bus"
+                  style={{ backgroundImage: `url(${car.info.imgMain})` }}
+                >
+                  <hr className="hrLine" />
+                  <p>{car.info.name}</p>
+                  <p className="rez">Sprawdź i zarezerwuj -&gt; </p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </section>
         <section id="contact">
           <Contact />
         </section>
-
+        <div className="banner">
+          <img src={banner} alt="informacja o PFR" />
+        </div>
         <Footer />
       </div>
     </main>

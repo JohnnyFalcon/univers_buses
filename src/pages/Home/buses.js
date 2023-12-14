@@ -8,8 +8,10 @@ import merc3 from "../../assets/merc3.jpg";
 import merc4 from "../../assets/merc4.jpg";
 import reno from "../../assets/reno-front.png";
 import renoBez from "../../assets/reno-front-bez.png";
+
+import soon from "../../assets/soon.png";
 import reno2 from "../../assets/reno2.jpg";
-import temp from "../../assets/image.webp";
+
 export const buses = [
   {
     link: "setra-s415-gt-hd",
@@ -49,14 +51,17 @@ export const buses = [
       imgMain: mercImg,
       images: [mercImg, merc2, merc3, merc4]
     }
-  },
+  }
+];
+
+export const miniBuses = [
   {
-    link: "renault-traffic",
+    link: "renault-traffic-21",
     info: {
-      id: "2",
-      name: "Renault Trafic 2020",
+      id: "0",
+      name: "Renault Trafic 2021",
       description:
-        "Odkryj doskonałą równowagę między stylowym designem a praktyczną funkcjonalnością w Renault Trafic. Ten nowoczesny van nie tylko zapewnia komfortową podróż, ale także reprezentuje wszechstronność dla różnych celów użytkowania. Dostępny w eleganckich kolorach szarym i bezowym, Renault Trafic to idealny wybór dla tych, którzy cenią sobie efektywność, oszczędność i uniwersalność. Wynajmij go już dziś i spraw, by Twoje podróże były równie udane, niezależnie od potrzeb.",
+        "Odkryj doskonałą równowagę między stylowym designem a praktyczną funkcjonalnością w Renault Trafic. Ten nowoczesny van nie tylko zapewnia komfortową podróż, ale także reprezentuje wszechstronność dla różnych celów użytkowania. Trafic to idealny wybór dla tych, którzy cenią sobie efektywność, oszczędność i uniwersalność. Wynajmij go już dziś i spraw, by Twoje podróże były równie udane, niezależnie od potrzeb.",
       spec: [
         "Liczba miejsc: 9",
         "Klimatyzacja",
@@ -68,7 +73,42 @@ export const buses = [
         "Przestronna przestrzeń bagażowa"
       ],
       imgMain: reno,
-      images: [reno, renoBez, reno2]
+      images: [reno, reno2]
+    }
+  },
+  {
+    link: "renault-traffic-20",
+    info: {
+      id: "1",
+      name: "Renault Trafic 2020",
+      description:
+        "Odkryj doskonałą równowagę między stylowym designem a praktyczną funkcjonalnością w Renault Trafic. Ten nowoczesny van nie tylko zapewnia komfortową podróż, ale także reprezentuje wszechstronność dla różnych celów użytkowania. Renault Trafic to idealny wybór dla tych, którzy cenią sobie efektywność, oszczędność i uniwersalność. Wynajmij go już dziś i spraw, by Twoje podróże były równie udane, niezależnie od potrzeb.",
+      spec: [
+        "Liczba miejsc: 9",
+        "Klimatyzacja",
+        "Elektryczne szyby i lusterka",
+        "Sensor cofania",
+        "Tempomat",
+        "System audio z MP3",
+        "Euro 6",
+        "Przestronna przestrzeń bagażowa"
+      ],
+      imgMain: renoBez,
+      images: [renoBez]
+    }
+  }
+];
+
+export const cars = [
+  {
+    link: "soon",
+    info: {
+      id: "0",
+      name: "",
+      description: "Wkrótce również dostępne samochody osobowe",
+      spec: [],
+      imgMain: soon,
+      images: [soon]
     }
   }
 ];

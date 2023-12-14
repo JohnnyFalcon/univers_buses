@@ -79,10 +79,10 @@ const Contact = ({ defaultMessage }) => {
           <FontAwesomeIcon icon={faLocationDot} size="3x" />
           <a
             className="info-link"
-            href="https://maps.app.goo.gl/voAdS2qPGbkw5ZFW7"
+            href="https://maps.app.goo.gl/WGQba5WvKtC1L9wW8"
             target="_blank"
           >
-            Rynek 5, 37-600 Lubaczów
+            płk. Stanisława Dąbka 65, 37-600 Lubaczów
           </a>
         </div>
         <div className="link-div">
