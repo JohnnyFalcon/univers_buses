@@ -95,7 +95,7 @@ $main-dark: #443d37;
     }
 
     .swiper {
-        max-width: 50em;
+        width: 50em;
         max-height: 32em;
         margin: 0;
         border-radius: 1em;
@@ -126,6 +126,8 @@ $main-dark: #443d37;
 
 
     .car-div {
+        margin-top: 6em;
+        margin-bottom: 3em;
         width: 50em;
         height: 20em;
         display: flex;
