@@ -79,10 +79,10 @@ const Contact = ({ defaultMessage }) => {
           <FontAwesomeIcon icon={faLocationDot} size="3x" />
           <a
             className="info-link"
-            href="https://maps.app.goo.gl/WGQba5WvKtC1L9wW8"
+            href="https://maps.app.goo.gl/ce7Rap1P8yuppkU76"
             target="_blank"
           >
-            płk. Stanisława Dąbka 65, 37-600 Lubaczów
+            Generała Stanisława Dąbka 65, 37-600 Dąbków
           </a>
         </div>
         <div className="link-div">
