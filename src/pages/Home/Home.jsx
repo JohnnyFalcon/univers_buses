@@ -42,7 +42,6 @@ const Home = () => {
             src={mainImg}
             effect="blur"
             width={"100%"}
-            placeholderSrc={placeholderImg}
             height={"100%"}
             alt="bus"
           />
