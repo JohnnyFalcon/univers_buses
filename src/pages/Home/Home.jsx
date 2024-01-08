@@ -66,30 +66,31 @@ const Home = () => {
 
       <section id="about" className="key-points">
         <div>
-          <a
-            href="https://www.flaticon.com/free-icons/comfortable"
-            target="blank"
-          >
-            <img src={convIcon} alt="Guy on chair" />
-          </a>
-          <p className="title">Komfort</p>
-          <p>
-            Luksusowe podróże zawsze zaczynają się od wygodnego transportu.
-            Oferujemy doskonale utrzymane busy zapewniające nie tylko komfort,
-            ale także bezpieczeństwo. Wynajmij u nas i uczyń swoją podróż
-            niezapomnianą.
-          </p>
-        </div>
-        <div>
           <a href="https://www.flaticon.com/free-icons/vehicle" target="blank">
             <img src={carIcon} alt="Car" />
           </a>
           <p className="title">Nieograniczone możliwości</p>
           <p>
             Zaplanuj swoją podróż z nami i ciesz się pełną swobodą. Nasza flota
-            nowoczesnych busów jest dostępna, aby spełnić Twoje potrzeby.
-            Niezależnie od tego, czy to wycieczka z przyjaciółmi, czy rodzinna
-            podróż - mamy odpowiedni pojazd dla Ciebie.
+            nowoczesnych i doskonale utrzymanch busów jest dostępna, aby spełnić
+            Twoje potrzeby. Niezależnie od tego, czy to wycieczka z
+            przyjaciółmi, czy rodzinna podróż - mamy odpowiedni pojazd dla
+            Ciebie.
+          </p>
+        </div>
+        <div>
+          <a
+            href="https://www.flaticon.com/free-icons/comfortable"
+            target="blank"
+          >
+            <img src={convIcon} alt="Guy on chair" />
+          </a>
+          <p className="title">Wynajem długoterminowy</p>
+          <p>
+            Korzystając z naszej oferty długoterminowej, otrzymujesz atrakcyjną
+            ofertę, gwarantującą najbardziej korzystne warunki dla Twojego
+            transportu. Nie musisz się martwić serwisem i ubezpieczeniem. Proste
+            oraz bezpiecznie rozwiązanie dla każdego.
           </p>
         </div>
         <div>
