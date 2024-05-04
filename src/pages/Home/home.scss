@@ -294,7 +294,9 @@ $main-dark: #443d37;
 
 
         @media screen and (max-width: 800px) {
-
+            .buses {
+                justify-content: center;
+            }
 
             .title {
 
