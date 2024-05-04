@@ -70,7 +70,7 @@ const Contact = ({ defaultMessage }) => {
       <div className="info-links">
         <div className="link-div">
           <FontAwesomeIcon icon={faPhone} size="3x" />
-          <a className="info-link" href="tel:+48664800321">
+          <a className="info-link" href="tel:+48509955700">
             +48 509 955 700
           </a>
         </div>
